@@ -1,0 +1,38 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.main-container {
+  margin: 6rem;
+  padding: 4rem;
+  height: max-content;
+  border: 4px solid white;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+}
+
+.col-left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  gap: var(--gap-column);
+}
+
+.col-left .title {
+  font-size: var(--font-title-size);
+}
+
+.col-right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: var(--gap-column);
+}
+
+.col-right .title {
+  font-size: 2em;
+}
