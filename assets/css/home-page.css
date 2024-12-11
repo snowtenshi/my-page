@@ -1,8 +1,4 @@
-.row {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-}
+/* Introduction Section  */
 
 .main-container {
   margin: 6rem;
@@ -12,6 +8,7 @@
   border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
+  gap: 4rem;
 }
 
 .col-left {
@@ -24,6 +21,7 @@
 
 .col-left .title {
   font-size: var(--font-title-size);
+  font-weight: bold;
 }
 
 .col-right {
@@ -35,4 +33,74 @@
 
 .col-right .title {
   font-size: 2em;
+  text-align: center;
+}
+
+.col-right .box-information {
+  border: 4px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 1.2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.col-right .box-information i {
+  font-size: 1.4rem;
+  vertical-align: middle;
+}
+
+.col-right .box-information a,
+.col-right .box-information p {
+  gap: 0.5rem; 
+  color: inherit;
+  text-decoration: none; 
+}
+
+.col-right .box-information a:hover {
+  text-decoration: underline; 
+}
+
+/* About me Section  */
+
+.about-me {
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-column)
+}
+
+.about-me .title {
+  padding: .4rem;
+  border-top: 4px dashed var(--border-color);
+  border-bottom: 4px dashed var(--border-color);
+  text-align: center;
+  font-size: 2em;
+}
+
+.about-me__text {
+  padding: 1.2rem;
+}
+
+.about-me__text p {
+  text-align: justify;
+}
+
+.about-me__subtext {
+  margin-top: 2rem;
+}
+
+.about-me__subtext p {
+  text-align: center;
+}
+
+.about-me__img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-me__img img {
+  max-width: 60rem;
+  border-radius: var(--border-radius);
 }
